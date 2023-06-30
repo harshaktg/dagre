@@ -1302,25 +1302,13 @@ THE SOFTWARE.
                 attrs.dummy = "edge-label";
                 attrs.labelpos = edgeLabel.labelpos;
               }
-              // HV: Add order to edge
-              g.setEdge(
-                v,
-                dummy,
-                { weight: edgeLabel.weight, order: edgeLabel.order },
-                name
-              );
+              g.setEdge(v, dummy, { weight: edgeLabel.weight }, name);
               if (i === 0) {
                 g.graph().dummyChains.push(dummy);
               }
               v = dummy;
             }
-            // HV: Add order to edge
-            g.setEdge(
-              v,
-              w,
-              { weight: edgeLabel.weight, order: edgeLabel.order },
-              name
-            );
+            g.setEdge(v, w, { weight: edgeLabel.weight }, name);
           }
 
           function undo(g) {
