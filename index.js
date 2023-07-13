@@ -27,7 +27,8 @@ module.exports = {
   debug: require("./lib/debug"),
   util: {
     time: require("./lib/util").time,
-    notime: require("./lib/util").notime
+    notime: require("./lib/util").notime,
+    maxRank: require("./lib/util").maxRank,
   },
-  version: require("./lib/version")
+  version: require("./lib/version"),
 };
