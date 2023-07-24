@@ -28,6 +28,9 @@ module.exports = {
   util: {
     time: require("./lib/util").time,
     notime: require("./lib/util").notime,
+    // HV: to check maxRank/depth in the graph
+    maxRank: require("./lib/util").maxRank,
+    longestPath: require("./lib/rank/util").longestPath,
   },
   version: require("./lib/version"),
 };
